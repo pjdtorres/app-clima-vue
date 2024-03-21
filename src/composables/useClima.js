@@ -19,7 +19,7 @@ export default function useClima() {
       // Obtener la lat, lng
 
       // const url = `https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid=${key}`;
-      const url = `http://api.openweathermap.org/geo/1.0/direct?q=${ciudad},${pais}&limit=1&appid=${key}`;
+      const url = `https://api.openweathermap.org/geo/1.0/direct?q=${ciudad},${pais}&limit=1&appid=${key}`;
 
       const { data } = await axios(url);
       const { lat, lon } = data[0];
